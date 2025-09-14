@@ -1,0 +1,27 @@
+{
+  "name": "Kauday-LSP Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.formatOnSave": true
+  },
+  "extensions": [
+    "rust-lang.rust-analyzer",
+    "ms-vscode.cpptools",
+    "ms-vscode.cmake-tools"
+  ],
+  "postCreateCommand": "./post-create.sh",
+  "remoteUser": "vscode",
+  "features": {},
+  "mounts": [],
+  "forwardPorts": [],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "rust-analyzer.cargo.allFeatures": true
+      }
+    }
+  }
+}
