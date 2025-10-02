@@ -1,10 +1,4 @@
-; Kaudo LSP Launcher (Assembly)
-; Best Practices:
-; - Keep the launcher tiny; delegate to external asm-lsp via stdio.
-; - Inherit stdio; do not transform I/O; minimize latency.
-; - Pass through arguments if provided; default to just the binary name.
-; - Allow env to select path by exporting a different binary on PATH.
-; - Exit with the upstream server status when possible.
+; will improve, used Codeium for best practices, might fit it greately to Kaudo IDE when works fully, to be more precise
 
 BITS 64
 
