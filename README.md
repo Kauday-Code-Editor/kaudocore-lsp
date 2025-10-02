@@ -1,4 +1,4 @@
-## Kaudo LSP
+# Kaudo LSP
 
 - rust-lsp (Rust): delegates to rust-analyzer
 - c-lsp (C): delegates to clangd
@@ -6,7 +6,7 @@
 
 See subdirectories for build instructions.
 
-The Fastest Best Practices
+## The Fastest Best Practices
 
 - Pin versions: use distro packages or specific releases of rust-analyzer/clangd/asm-lsp to avoid drift.
 - Prefer stdio transport: avoid TCP unless debugging; stdio minimizes latency and surprises.
